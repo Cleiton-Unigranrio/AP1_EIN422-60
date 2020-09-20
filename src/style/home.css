@@ -10,7 +10,7 @@ main {
   display: grid;
   height: 100%;
   grid-template-columns: 130px 1fr 1fr;
-  grid-template-areas: ". text background";
+  grid-template-areas: ". text image";
 }
 
 .text-area {
@@ -18,9 +18,13 @@ main {
   align-self: center;
 }
 
-.background-area {
-  grid-area: background;
+.image-area {
+  grid-area: image;
   align-self: center;
+}
+
+.image-area img {
+  max-width: 1000px;
 }
 
 .text-area__title, .text-area__subtitle {
@@ -35,4 +39,23 @@ main {
 
 .text-area__subtitle {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1360px) {
+  .image-area img {
+    max-width: 800px;
+  }
+}
+
+
+@media screen and (max-width: 1160px) {
+  .image-area img {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image-area img {
+    max-width: 400px;
+  }
 }
