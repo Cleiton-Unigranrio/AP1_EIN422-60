@@ -1,0 +1,8 @@
+:root {
+  font-size: 16px;
+  --color-primary: #16a085;
+  --color-primary-active: #28ccac;
+  --color-foreground: #333;
+  --color-foreground-revert: #fff;
+  --header-height: 75px;
+}

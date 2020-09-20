@@ -1,0 +1,73 @@
+@import "./variables.css";
+@import "./navbar.css";
+@import "./button.css";
+
+main {
+  height: calc(100% - var(--header-height) - 48px);
+  margin-top: 48px;
+}
+
+.main-section {
+  height: 100%;
+  margin: 0 12.5%;
+}
+
+h1.title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.two-fields {
+  display: flex;
+}
+
+.two-fields:last-child {
+  margin-bottom: initial;
+}
+
+.two-fields input {
+  flex: 1 0;
+  margin-right: 24px;
+}
+
+.two-fields input:last-child {
+  margin-right: initial;
+  margin-bottom: 24px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+}
+
+input:last-child {
+  margin-bottom: initial;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid var(--color-primary);
+  border-bottom: none;
+}
+
+input::placeholder {
+  color: #444;
+}
+
+textarea {
+  font-family: "Montserrat";
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 8px;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #444;
+}
